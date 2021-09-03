@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #da22ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #9733ee,
+    #da22ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #9733ee,
+    #da22ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.container {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.digitalClock {
+  width: fit-content;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: hsla(0, 0%, 25%, 0.35);
+}
+
+.clock-time p,
+.clock-date p {
+  display: block;
+  margin: 0.5rem 0;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+
+.clock-time p {
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+.clock-date p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  .clock-time {
+    text-align: center;
+  }
+
+  .clock-time p,
+  .clock-date p {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+
+  .clock-time p {
+    font-size: 5rem;
+  }
+
+  .clock-date p {
+    font-size: 3rem;
+  }
+}
