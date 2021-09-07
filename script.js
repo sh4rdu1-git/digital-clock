@@ -4,7 +4,6 @@ window.onload = () => {
 
 const getDateTime = () => {
   let date = new Date();
-  console.log(date);
 
   let hours = date.getHours();
   let minutes = date.getMinutes();
